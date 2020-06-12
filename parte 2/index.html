@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <button onmouseover="mostraAlerta()">Me pressione</button>
+        
+        <button class="botao">Adicionar</button>
+        <input type="text" name="nome" id="nome"/>
+    </div>
+
+    <script>
+        // DOM a arvore de elementos dentro do HTML, todos os elementos dispostos em tela
+
+        function mostraAlerta(){
+            alert('Botão foi clicado')
+        }
+
+        var inputElement = document.getElementById('nome');
+
+        var inputElement = document.querySelector('div#app input');
+        //queryselector buscar elementos em tela
+        //pode referenciar usando ex:input[name=nome]
+
+        var btnElement = document.querySelector('button.botao')
+        
+        btnElement.onclick = function(){
+            alert('Botão clicada');
+        }
+    </script>
+</body>
+</html>
